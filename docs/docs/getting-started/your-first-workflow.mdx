@@ -128,6 +128,47 @@ to give you a better understanding of how Temporal works and the key concepts.
     ```
 
   </TabItem>
+  <TabItem value="ruby" label="Ruby">
+    :::info
+    For a full tutorial, see the [Temporal docs](https://docs.temporal.io/develop/ruby/temporal-client#start-workflow)
+    :::
+
+    ```ruby title="main.rb"
+    require "temporalio/client"
+    require "json"
+
+    options = {
+      target_host: 'localhost:7233',
+      namespace: 'default'
+    }
+
+    # Connect to Temporal
+    client = Temporalio::Client.connect(
+      options[:target_host],
+      options[:namespace]
+    )
+
+    # Start workflow
+    handle = client.start_workflow(
+      "simple-workflow",
+      nil,
+      task_queue: "zigflow",
+      id: "mtls-workflow-#{Time.now.to_i}",
+    )
+
+    # Wait for result
+    result = handle.result
+
+    # Pretty-print JSON
+    puts JSON.pretty_generate(result)
+    ```
+
+    Now run this script:
+
+    ```sh
+    ruby main.rb
+    ```
+  </TabItem>
   <TabItem value="typescript" label="TypeScript">
     :::info
     For a full tutorial, see the [Temporal docs](https://docs.temporal.io/develop/typescript/temporal-client#start-workflow-execution)
