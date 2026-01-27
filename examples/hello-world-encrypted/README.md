@@ -12,6 +12,9 @@ Hello world with Zigflow, but [encrypted](https://github.com/mrsimonemms/tempora
 
 ## Getting started
 
+> For an example Codec Server, check out
+> [mrsimonemms/temporal-codec-server](https://github.com/mrsimonemms/temporal-codec-server)
+
 ```sh
 go run .
 ```
