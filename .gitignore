@@ -15,3 +15,5 @@ values.example.yaml
 wiki
 
 *.pb.go
+
+.claude
