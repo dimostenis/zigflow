@@ -52,14 +52,14 @@ jobs:
         uses: peter-evans/create-pull-request@v8
         with:
           commit-message: "chore: update dependencies"
-          title: "chore: monthly dependencies update"
+          title: "chore: update dependencies"
           body: |
-            Automated monthly dependency refresh.
+            Automated dependency refresh.
 
             - Pre-commit dependencies update via `pre-commit autoupdate`
             - Go dependencies updated via `go get -u ./...` and `go mod tidy`
             - Docs npm dependencies updated via `npm update` in `docs`
-          branch: chore/monthly-deps
+          branch: chore/update-deps
           delete-branch: true
           labels: dependencies
           signoff: true
