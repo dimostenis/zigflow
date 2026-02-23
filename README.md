@@ -150,7 +150,7 @@ on naming conventions, dev setup, and commit style.
 
 <a href="https://github.com/mrsimonemms/zigflow/graphs/contributors">
   <img alt="Contributors"
-    src="https://contrib.rocks/image?repo=mrsimonemms/zigflow&v=1769433596" />
+    src="https://contrib.rocks/image?repo=mrsimonemms/zigflow&v=1771822998" />
 </a>
 
 Made with [contrib.rocks](https://contrib.rocks/preview?repo=mrsimonemms%2Fzigflow).
