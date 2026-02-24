@@ -50,6 +50,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   customFields: {
+    githubDomain,
     githubURL,
   },
 
@@ -108,6 +109,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        content: `⭐ <a href="${githubURL}" target="_blank">Star Zigflow on GitHub</a> to help more developers discover it.`,
+        backgroundColor: '#E1062C',
+        textColor: '#FAFAFA',
+      },
       image: 'img/social.png',
       colorMode: {
         respectPrefersColorScheme: true,
@@ -155,19 +161,18 @@ const config = {
             label: 'Deploying',
           },
           {
+            type: 'custom-githubStars',
+            position: 'right',
+          },
+          {
             label: '❤️ Sponsor',
             position: 'right',
             href: 'https://buymeacoffee.com/mrsimonemms',
           },
           {
-            label: 'Temporal',
+            label: 'Built on Temporal',
             position: 'right',
             href: 'https://temporal.io',
-          },
-          {
-            href: githubURL,
-            label: 'GitHub',
-            position: 'right',
           },
         ],
       },

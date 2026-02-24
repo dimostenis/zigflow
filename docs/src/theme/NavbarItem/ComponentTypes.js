@@ -13,17 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import GitHubStars from '@site/src/components/NavbarItems/GitHubStars';
+import ComponentTypes from '@theme-original/NavbarItem/ComponentTypes';
 
-.theme-announcement-bar {
-  font-weight: 600;
-  letter-spacing: 0.2px;
-  border-bottom: 1px solid #c00524;
-  padding-top: 6px;
-  padding-bottom: 6px;
-}
-
-.theme-announcement-bar a {
-  color: #ffd400;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
+export default {
+  ...ComponentTypes,
+  'custom-githubStars': GitHubStars,
+};
