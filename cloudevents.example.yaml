@@ -1,4 +1,4 @@
 clients:
   - name: file-output
     protocol: file
-    target: ./tmp/events
+    target: /tmp/events
